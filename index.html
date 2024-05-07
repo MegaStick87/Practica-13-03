@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- Esta declaración define que el documento es de tipo HTML5 -->
+<html lang="en">
+<!-- La etiqueta <html> comienza el documento HTML. El atributo 'lang="en"' especifica que el idioma del documento es inglés -->
+
+<head>
+    <!-- La sección <head> contiene metadatos del documento que no son visibles en la página -->
+    <meta charset="UTF-8">
+    <!-- Esta etiqueta meta especifica la codificación de caracteres para el documento, UTF-8, que incluye la mayoría de los caracteres de todos los idiomas escritos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Esta etiqueta meta controla la ventana gráfica del navegador para hacer que el diseño sea responsivo en dispositivos móviles -->
+    <title>Foco - JS</title>
+    <!-- El título del documento, que aparece en la pestaña del navegador -->
+    <link rel="icon" href="imgs/bulb_ico.gif" type="image/gif">
+    <!-- Define un ícono para la pestaña del navegador, que es un GIF de una bombilla -->
+    <link rel="stylesheet" href="Style.css">
+    <!-- Vincula una hoja de estilos CSS externa al documento para aplicar estilos personalizados -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Preconecta con Google Fonts para reducir la latencia al cargar las fuentes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preconecta con el dominio de Google Fonts para fuentes, usando CORS para solicitudes cruzadas -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Importa la fuente 'Roboto' de Google Fonts para usarla en la página -->
+</head>
+
+<body onload="document.body.style.background='black';">
+    <!-- El cuerpo del documento, que establece el fondo a negro cuando se carga la página -->
+    <header>
+        <!-- La cabecera de la página, que contiene elementos de encabezado -->
+        <h1>Foco - JS</h1>
+        <!-- Encabezado nivel 1 que muestra el título de la página -->
+    </header>
+    <h3>Cambia elementos, pero también atributos</h3>
+    <!-- Encabezado nivel 3 que introduce una sección de la página -->
+    <p>Vamos a cambiar el valor del atributo, con Súper JS</p>
+    <!-- Párrafo que explica el propósito de la interactividad de la página -->
+    
+    <button onclick="encenderFoco()">Encender Foco</button>
+    <!-- Botón que, al ser clickeado, ejecuta la función 'encenderFoco' para cambiar el estado visual de la página -->
+    <img src="imgs/pic_bulboff.gif" id="myImage">
+    <!-- Imagen de una bombilla apagada, que cambia según la interacción del usuario -->
+    <button onclick="apagarFoco()">Apagar Foco</button>
+    <!-- Botón que, al ser clickeado, ejecuta la función 'apagarFoco' para revertir los cambios hechos por 'encenderFoco' -->
+
+    <script>
+        function encenderFoco() {
+            document.getElementById('myImage').src = 'imgs/pic_bulbon.gif';
+            document.body.style.background = "white";
+            document.body.style.color = "black";
+        }
+        // Función JavaScript para cambiar la imagen a una bombilla encendida y el fondo de la página a blanco 
+        function apagarFoco() {
+            document.getElementById('myImage').src = 'imgs/pic_bulboff.gif';
+            document.body.style.background = "black";
+            document.body.style.color = "white";
+        }
+        // Función JavaScript para cambiar la imagen a una bombilla apagada y el fondo de la página a negro
+    </script>
+</body>
+<!-- Esta etiqueta cierra el <body>, que es donde termina el contenido visible de la página. -->
+</html>
+<!-- Esta etiqueta cierra el documento HTML. -->

@@ -1,0 +1,47 @@
+* {
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+    /* Restablece los márgenes y el padding a 0 y cambia el modelo de caja para que incluya padding y border en el tamaño total del elemento. */
+}
+
+body {
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    /* Establece el color de texto a blanco, la alineación del texto y los elementos a centrado, y aplica la fuente 'Roboto' en estilo itálico y con peso 900. */
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    background-color: #af4c4c;
+    color: #ffe600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    /* Define el estilo del encabezado con un fondo color rojo claro, texto amarillo, centrado horizontal y verticalmente con flexbox, y un margen inferior de 10px. */
+}
+
+img {
+    height: 700px;
+    padding-top: 80px;
+    /* Establece la altura de las imágenes a 700px y añade un padding superior de 80px. */
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #34dab4;
+    font-size: 20px;
+    /* Define el estilo de los botones con un fondo color turquesa, sin borde, tamaño de fuente de 20px, y hace que el cursor se convierta en puntero al pasar por encima. */
+}
